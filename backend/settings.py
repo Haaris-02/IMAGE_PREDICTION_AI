@@ -136,3 +136,4 @@ MAILERS = {
 CORS_ALLOW_ALL_ORIGINS = True
 import os
 CNN_MODEL_PATH = os.path.join(BASE_DIR, 'saved_models', 'digit_cnn_model.keras')
+ALLOWED_HOSTS = ['*']
