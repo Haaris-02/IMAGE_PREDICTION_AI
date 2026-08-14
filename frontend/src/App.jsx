@@ -63,7 +63,7 @@ function App() {
 
     setLoading(true);
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/predict/', {
+      const response = await axios.post('https://digit-cnn-backend.onrender.com/api/predict/', {
         image_base64: imageBase64,
       });
       setPrediction(response.data);
@@ -84,7 +84,7 @@ function App() {
 
     setLoading(true);
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/predict/', formData, {
+      const response = await axios.post('https://digit-cnn-backend.onrender.com/api/predict/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setPrediction(response.data);
